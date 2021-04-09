@@ -13,7 +13,7 @@
 	<% 
 		Pregunta p1 = new Pregunta();
 		p1.setIdPregunta(1);
-		p1.setTexto("¿Qué es jstl?");
+		p1.setTexto("¿Qué es JSTL?");
 		
 		Pregunta p2 = new Pregunta();
 		p2.setIdPregunta(2);
@@ -23,11 +23,11 @@
 		c.add(p1);
 		c.add(p2);
 		
-		request.setAttribute("preguntas", c);
+		request.setAttribute("datos", c);
 	%>
-	<c:forEach items="${requestScope.preguntas}" 
-			   var="p" varStatus="i">
-			${i.count}.- ${p.texto} <br />
+	<c:forEach items="${requestScope.datos}" 
+			   var="reg" varStatus="i">
+			${i.count}.- ${reg.texto} <br />
 	</c:forEach>
 </body>
 </html>

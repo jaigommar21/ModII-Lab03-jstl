@@ -3,6 +3,7 @@ package pe.edu.tecsup.app.entities;
 public class Pregunta {
 	private int idPregunta;
 	private String texto;
+	
 	public int getIdPregunta() {
 		return idPregunta;
 	}
