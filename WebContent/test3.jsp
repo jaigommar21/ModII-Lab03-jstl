@@ -14,12 +14,15 @@
 		Pregunta p1 = new Pregunta();
 		p1.setIdPregunta(1);
 		p1.setTexto("¿Qué es jstl?");
+		
 		Pregunta p2 = new Pregunta();
 		p2.setIdPregunta(2);
 		p2.setTexto("¿Qué es EL?");
+		
 		Collection<Pregunta> c = new ArrayList<Pregunta>();
 		c.add(p1);
 		c.add(p2);
+		
 		request.setAttribute("preguntas", c);
 	%>
 	<c:forEach items="${requestScope.preguntas}" 
