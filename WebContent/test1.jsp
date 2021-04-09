@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+    <!--                      KEY               VALUE      -->
 	<c:set scope="session" var="nombre" value="<b>David</b>"/>
 	Bienvenido <c:out value="Hola ${sessionScope.nombre}" default="Invitado" escapeXml="false"/>
 
